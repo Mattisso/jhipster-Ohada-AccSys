@@ -10,8 +10,7 @@ import { PasswordResetFinishService } from './password-reset-finish.service';
   templateUrl: './password-reset-finish.component.html'
 })
 export class PasswordResetFinishComponent implements OnInit, AfterViewInit {
-  @ViewChild('newPassword', { static: false })
-  newPassword?: ElementRef;
+  @ViewChild('newPassword') newPassword?: ElementRef;
 
   initialized = false;
   doNotMatch = false;

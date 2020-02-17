@@ -12,8 +12,7 @@ import { RegisterService } from './register.service';
   templateUrl: './register.component.html'
 })
 export class RegisterComponent implements AfterViewInit {
-  @ViewChild('login', { static: false })
-  login?: ElementRef;
+  @ViewChild('login') login?: ElementRef;
 
   doNotMatch = false;
   error = false;

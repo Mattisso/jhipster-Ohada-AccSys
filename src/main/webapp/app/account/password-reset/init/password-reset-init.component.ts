@@ -8,8 +8,7 @@ import { PasswordResetInitService } from './password-reset-init.service';
   templateUrl: './password-reset-init.component.html'
 })
 export class PasswordResetInitComponent implements AfterViewInit {
-  @ViewChild('email', { static: false })
-  email?: ElementRef;
+  @ViewChild('email') email?: ElementRef;
 
   success = false;
   resetRequestForm = this.fb.group({

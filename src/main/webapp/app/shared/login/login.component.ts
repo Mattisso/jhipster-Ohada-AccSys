@@ -10,8 +10,7 @@ import { LoginService } from 'app/core/login/login.service';
   templateUrl: './login.component.html'
 })
 export class LoginModalComponent implements AfterViewInit {
-  @ViewChild('username', { static: false })
-  username?: ElementRef;
+  @ViewChild('username') username?: ElementRef;
 
   authenticationError = false;
 
